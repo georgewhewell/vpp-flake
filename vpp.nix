@@ -8,7 +8,12 @@
 , libbsd
 , libelf
 , libnl
+, libmnl
 , libuuid
+, zlib
+, libpcap
+, jansson
+, libconfuse
 , mbedtls
 , openssl
 , rdma-core
@@ -45,7 +50,12 @@ stdenv.mkDerivation {
     libbsd
     libelf
     libnl
+    libmnl
     libuuid
+    libpcap
+    jansson
+    zlib
+    libconfuse
     mbedtls
     openssl
     rdma-core
@@ -59,11 +69,17 @@ stdenv.mkDerivation {
   doCheck = true;
 
   postPatch = ''
+    # pkg-config --list-all
+    #exit 1
     cp ${versionScript} scripts/version
 
     # the whole packaging stuff is full of impure scripts and
     # not needed in our case
-    sed -i 's/cmake pkg/cmake/' CMakeLists.txt
+    # sed -i 's/cmake pkg/cmake/' CMakeLists.txt
+
+    # Nix has no /etc/os-release.
+    substituteInPlace pkg/CMakeLists.txt --replace 'file(READ "/etc/os-release" os_release)' 'set(os_release "NAME=NIX; ID=nix")'
+
 
     # So much about -Wall
     sed -i 's/-Wall/-Wall -Wno-stringop-overflow -Wno-unused-variable/' \
