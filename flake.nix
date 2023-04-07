@@ -1,7 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/master;
-    vpp.url = github:FDio/vpp/stable/2202;
+    nixpkgs.url = github:NixOS/nixpkgs/ee01de29d2f58d56b1be4ae24c24bd91c5380cea;
+    vpp.url = github:FDio/vpp/stable/2302;
     vpp.flake = false;
   };
   outputs = inputs@{ flake-parts, vpp, ... }:

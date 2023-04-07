@@ -5,11 +5,11 @@
         "nixpkgs-lib": "nixpkgs-lib"
       },
       "locked": {
-        "lastModified": 1674771137,
-        "narHash": "sha256-Zpk1GbEsYrqKmuIZkx+f+8pU0qcCYJoSUwNz1Zk+R00=",
+        "lastModified": 1680392223,
+        "narHash": "sha256-n3g7QFr85lDODKt250rkZj2IFS3i4/8HBU2yKHO3tqw=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "7c7a8bce3dffe71203dcd4276504d1cb49dfe05f",
+        "rev": "dcc36e45d054d7bb554c9cdab69093debd91a0b5",
         "type": "github"
       },
       "original": {
@@ -19,28 +19,28 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1647958136,
-        "narHash": "sha256-xhk8qtipMq2zHBZ2q/obien+grcRmFD8KV0jjjwdP/U=",
+        "lastModified": 1662073868,
+        "narHash": "sha256-R18MixER2iwduNqOlLzXUms0Z7G3emnKZOKyQS52SSA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c4233257cffb6d0ec07865260bb0b896753d8e21",
+        "rev": "ee01de29d2f58d56b1be4ae24c24bd91c5380cea",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "master",
         "repo": "nixpkgs",
+        "rev": "ee01de29d2f58d56b1be4ae24c24bd91c5380cea",
         "type": "github"
       }
     },
     "nixpkgs-lib": {
       "locked": {
         "dir": "lib",
-        "lastModified": 1672350804,
-        "narHash": "sha256-jo6zkiCabUBn3ObuKXHGqqORUMH27gYDIFFfLq5P4wg=",
+        "lastModified": 1680213900,
+        "narHash": "sha256-cIDr5WZIj3EkKyCgj/6j3HBH4Jj1W296z7HTcWj1aMA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "677ed08a50931e38382dbef01cba08a8f7eac8f6",
+        "rev": "e3652e0735fbec227f342712f180f4f21f0594f2",
         "type": "github"
       },
       "original": {
@@ -61,16 +61,16 @@
     "vpp": {
       "flake": false,
       "locked": {
-        "lastModified": 1647814022,
-        "narHash": "sha256-vIVJdy6sSrqn6Pr+IkAw7Ez0ObmXTAj9rMbQQcddBuY=",
+        "lastModified": 1680276288,
+        "narHash": "sha256-m7ddwrSmzksqpkrNJoAIbvK/yAsI98OT0S1xIblRiEg=",
         "owner": "FDio",
         "repo": "vpp",
-        "rev": "f4011d19edefc2f4d4d3e0d08d6e3d7c7e0889d2",
+        "rev": "6206eaba4eb5e8c312ac1c4b2023180e8cfd6c07",
         "type": "github"
       },
       "original": {
         "owner": "FDio",
-        "ref": "stable/2202",
+        "ref": "stable/2302",
         "repo": "vpp",
         "type": "github"
       }

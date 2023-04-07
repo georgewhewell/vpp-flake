@@ -22,7 +22,7 @@
 assert lib.versionAtLeast dpdk.version "21.11";
 
 let
-  version = "22.02";
+  version = vppSource.rev;
   versionScript = writeScript "version" "echo ${version}-foo-bar";
 in
 
